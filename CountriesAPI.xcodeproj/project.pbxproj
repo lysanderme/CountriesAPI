@@ -14,6 +14,9 @@
 		AC784CC829CB085700127E40 /* CountriesAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC784CC729CB085700127E40 /* CountriesAPITests.swift */; };
 		AC784CD229CB085700127E40 /* CountriesAPIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC784CD129CB085700127E40 /* CountriesAPIUITests.swift */; };
 		AC784CD429CB085700127E40 /* CountriesAPIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC784CD329CB085700127E40 /* CountriesAPIUITestsLaunchTests.swift */; };
+		AC784CE329CB094000127E40 /* CountriesAdaptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC784CE229CB094000127E40 /* CountriesAdaptor.swift */; };
+		AC784CE629CB0B2300127E40 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC784CE529CB0B2300127E40 /* Country.swift */; };
+		AC784CE829CB0CBF00127E40 /* CountryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC784CE729CB0CBF00127E40 /* CountryResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		AC784CCD29CB085700127E40 /* CountriesAPIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountriesAPIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC784CD129CB085700127E40 /* CountriesAPIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesAPIUITests.swift; sourceTree = "<group>"; };
 		AC784CD329CB085700127E40 /* CountriesAPIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesAPIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AC784CE229CB094000127E40 /* CountriesAdaptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesAdaptor.swift; sourceTree = "<group>"; };
+		AC784CE529CB0B2300127E40 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		AC784CE729CB0CBF00127E40 /* CountryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +100,12 @@
 		AC784CB529CB085500127E40 /* CountriesAPI */ = {
 			isa = PBXGroup;
 			children = (
+				AC784CE429CB0B0E00127E40 /* Model */,
 				AC784CB629CB085500127E40 /* CountriesAPIApp.swift */,
 				AC784CB829CB085500127E40 /* ContentView.swift */,
 				AC784CBA29CB085600127E40 /* Assets.xcassets */,
 				AC784CBC29CB085600127E40 /* Preview Content */,
+				AC784CE229CB094000127E40 /* CountriesAdaptor.swift */,
 			);
 			path = CountriesAPI;
 			sourceTree = "<group>";
@@ -125,6 +133,15 @@
 				AC784CD329CB085700127E40 /* CountriesAPIUITestsLaunchTests.swift */,
 			);
 			path = CountriesAPIUITests;
+			sourceTree = "<group>";
+		};
+		AC784CE429CB0B0E00127E40 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AC784CE529CB0B2300127E40 /* Country.swift */,
+				AC784CE729CB0CBF00127E40 /* CountryResponse.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +274,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC784CE629CB0B2300127E40 /* Country.swift in Sources */,
+				AC784CE329CB094000127E40 /* CountriesAdaptor.swift in Sources */,
 				AC784CB929CB085500127E40 /* ContentView.swift in Sources */,
+				AC784CE829CB0CBF00127E40 /* CountryResponse.swift in Sources */,
 				AC784CB729CB085500127E40 /* CountriesAPIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

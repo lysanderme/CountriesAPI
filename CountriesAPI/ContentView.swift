@@ -8,14 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    let adaptor = CountriesAdaptor()
+    
+    @State private var nameOfCountry: String = ""
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+        Text("Country: \(nameOfCountry)")
+            .onAppear {
+                adaptor.getNames(target: "names", completion: { countries in
+                    if let countries = countries {
+                        nameOfCountry = countries.first?.name ?? "No countries found"
+                    }
+                })
+            }
     }
 }
 
